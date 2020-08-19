@@ -26,8 +26,8 @@ namespace ExamineSystem
         Vector3 originalPosition;
         Quaternion originalRotation;
         private Vector3 startPos;
-        private bool doOnce;
-        private bool canRotate;
+        public bool doOnce;
+        public bool canRotate;
         private bool Examined;
         private const string emissive = "_EMISSION";
         private const string mouseX = "Mouse X";
@@ -35,7 +35,7 @@ namespace ExamineSystem
         private const string interact = "Interact";
         private const string examineLayer = "ExamineLayer";
 
-        private ExamineRaycast raycastManager;
+        public ExamineRaycast raycastManager;
 
         public enum UIType { None, BasicLowerUI, RightSideUI }
 

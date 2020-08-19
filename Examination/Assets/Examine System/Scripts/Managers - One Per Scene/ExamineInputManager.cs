@@ -10,6 +10,10 @@ namespace ExamineSystem
         [Header("Rotation Key Inputs")]
         public KeyCode rotateKey;
         public KeyCode dropKey;
+        public KeyCode left;
+        public KeyCode right;
+        public KeyCode up;
+        public KeyCode down;
 
         public static ExamineInputManager instance;
 
