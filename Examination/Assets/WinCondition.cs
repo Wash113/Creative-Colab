@@ -187,17 +187,13 @@ public class WinCondition : MonoBehaviour
                 ContinTxt.GetComponent<Animator>().SetBool("FadeTxt", false);
                 ExamineDisableManager.instance.DisablePlayer(false);
             }
-            //Puz3
-            if (Puz1 == true && Puz2 == true && Puz3 == false && ContinTxt.GetComponent<Animator>().GetBool("FadeTxt") == false)
+            
+            DeathTxt.GetComponent<Animator>().SetBool("FadeTxt", true);
+            if(Input.GetKey(KeyCode.Escape))
             {
-                DeathTxt.GetComponent<Animator>().SetBool("FadeTxt", true);
-                if(Input.GetKey(KeyCode.Escape))
-                {
-                    Cube.GetComponent<AudioSource>().PlayOneShot(failSound);
-                    fail.Play();
-                    StartCoroutine("WaitForParticle");
-                }
-                
+                if (!Cube.GetComponent<AudioSource>().isPlaying) { Cube.GetComponent<AudioSource>().PlayOneShot(failSound); }
+                fail.Play();
+                StartCoroutine("WaitForParticle");
             }
         }
         #endregion
