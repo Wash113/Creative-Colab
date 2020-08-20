@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
     <Compile Include="Assets\Examine System\Additional Packages\Basic Blur\Effects\Scripts\BlurOptimized.cs" />
     <Compile Include="Assets\Examine System\Additional Packages\Basic Blur\Effects\Scripts\PostEffectsBase.cs" />
     <Compile Include="Assets\Examine System\Additional Packages\Basic Blur\Effects\Scripts\VignetteAndChromaticAberration.cs" />
@@ -95,7 +94,6 @@
     <Compile Include="Assets\Examine System\Scripts\Managers - One Per Scene\ExamineUIManager.cs" />
     <Compile Include="Assets\WinCondition.cs" />
     <None Include="Assets\Examine System\Additional Packages\Basic Blur\Effects\Shaders\VignettingShader.shader" />
-    <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
     <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
     <None Include="Assets\Examine System\Additional Packages\Basic Blur\Effects\Shaders\SeparableBlur.shader" />
     <None Include="Assets\Examine System\Additional Packages\Basic Blur\Effects\Scripts\MobileBlur.shader" />
